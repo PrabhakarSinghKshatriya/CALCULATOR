@@ -1,0 +1,76 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+}
+.calculator {
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 350px;
+}
+.display {
+    background-color: #222;
+    color: #fff;
+    padding: 20px;
+    text-align: right;
+    border-bottom: 1px solid #444;
+}
+.expression {
+    font-size: 1.2em;
+    color: #aaa;
+}
+.result {
+    font-size: 2.5em;
+    color: rgb(236, 131, 131);
+}
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+}
+.btn {
+    background-color: #444;
+    color: #e69e9e;
+    font-size: 1.5em;
+    padding: 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.btn:hover {
+    background-color: #555;
+}
+.btn:active {
+    background-color: #666;
+}
+.btn-operator {
+    background-color: #fe9241;
+}
+.btn-operator:hover {
+    background-color: #e6812f;
+}
+.btn-equal {
+    background-color: #4caf50;
+    grid-column: span 2;
+}
+.btn-equal:hover {
+    background-color: #1ce31c;
+}
+.btn-clear {
+    background-color: #f44336;
+}
+.btn-clear:hover {
+    background-color: #e2120f;
+}
+.btn-del {
+    background-color: #ff5722;
+}
+.btn-del:hover {
+    background-color: #eb3f0b;
+}
